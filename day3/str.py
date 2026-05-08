@@ -104,7 +104,9 @@ print(p.find("java")) #없는 문자를 찾으면 -1
 #print(p.index("java")) 없는 문자를 찾으면 에러 발생
 
 arr_Str=input("Input String: ").split("-")
-arr_Len=int(input("Input Number: "))
-arr_Val=list(range(0,arr_Len,2))
-arr_Val.remove(4)
+#information-technology 입력, - 기준으로 information=[0] technology=[1]
+arr_Len=int(input("Input Number: ")) #12 입력
+arr_Val=list(range(0,arr_Len,2)) # [0, 2, 4, 6, 8, 10]
+arr_Val.remove(4) # [0, 2, 6, 8, 10]
 print(arr_Str[1].find('i')+arr_Val[2])
+# i 없으므로 arr_Str[1].find('i')=-1, arr_Val[2]=6 -> -1+6=5
