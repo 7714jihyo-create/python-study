@@ -8,6 +8,6 @@ greet("홍길동")
 def print_star(n=1):
     print("n=",n)
     for i in range(n):
-        print("**********")
+        print("***********")
 print_star()
 print_star(3)
