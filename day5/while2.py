@@ -9,7 +9,7 @@ print("반복문 종료")
 
 print("="*20)
 
-menu=["쫄면","김밥","냉면","오뎅"]
+menu=["쫄면","김밥","냉면","어묵"]
 b=input("메뉴 선택")
 while b in menu:
     print(b)
